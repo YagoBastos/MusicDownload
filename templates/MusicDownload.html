@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='MusicDownload.css') }}">
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MusicDownload</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1>MusicDownload</h1>
+            <p>Sintonize a Melodia - Sua Música, Seu Momento! 🎵</p>
+        </div>
+        <div class="upload-area">
+            <form action="/download" method="post">
+                <label for="link">Insira o link do vídeo do YouTube:</label><br>
+                <input type="url" id="link" name="link" autocomplete="off">
+                <input type="submit" value="Baixar Áudio">
+            </form>
+        </div>
+    </body>
+</html>

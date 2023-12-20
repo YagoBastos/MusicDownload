@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='paginadownload.css') }}">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download realizado com sucesso!</title>
+</head>
+<body>
+        <div class="content">
+            <h1>Download realizado com sucesso!</h1>
+        </div>
+        <div class="upload-area">
+            <p>Musica: {{title}}</p>
+            <p>Pasta: {{directory}}</p>
+            <button onclick="javascript:history.back()">Voltar</button>
+        </div>
+    </body>
+</html>
